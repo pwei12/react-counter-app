@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 
 export class Counter extends Component {
-    state = { id: 1, value: 0 }
+    state = { 
+      id: this.props.id, 
+      value: this.props.value }
 
     handleIncrement = () => {
       const newValue = this.state.value + 1;
@@ -14,7 +16,7 @@ export class Counter extends Component {
     }
 
     evaluateClass = () => {
-      const existingClassName = "badge badge-"
+      // const existingClassName = "badge badge-"
      // return this.state.value > 0 ? existingClassName + "primary" : existingClassName + "warning";
       
       return this.state.value > 0 ? "primary" : "warning";
