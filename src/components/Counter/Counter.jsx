@@ -18,7 +18,7 @@ export default function Counter(props) {
           {value}
         </span>
       </h2>
-      <button className="btn btn-dark" onClick={() => handleIncrement(id)}> + </button>
+      <button className="btn btn-info" onClick={() => handleIncrement(id)}> + </button>
       <button className="btn btn-dark" onClick={() => handleDecrement(id)}> - </button>
       <button onClick={() => handleDelete(id)} className="btn btn-danger">Delete</button>
     </React.Fragment>

@@ -15,9 +15,9 @@ export class App extends Component {
   }
 
   handleReset = () => {
-    const newData = this.state.data;
+    const newData = [...this.state.data]
     newData.map(counter => {
-      counter.value = 0;
+      return counter.value = 0;
     })
     this.setState({ data: newData })
   }

@@ -11,9 +11,11 @@ export class Counters extends Component {
 
     return (
       <React.Fragment>
-            <button className="btn btn-success" onClick={this.props.handleReset}> Reset </button>
-        {/* {data.length === 0 && <h3>No more counter.</h3> } */}
-            {data.length === 0 ? <h3>No more counter.</h3> : data.map(counter => (
+            <button className="btn btn-success" onClick={this.props.handleReset}> 
+                Reset 
+            </button>
+            {data.length === 0 && <h3>No more counter.</h3> }
+            {data.map(counter => (
             <Counter 
                 key={counter.id} 
                 id={counter.id} 

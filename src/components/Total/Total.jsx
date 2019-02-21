@@ -3,8 +3,8 @@ import React from 'react'
 function Total(props) {
   return (
       <React.Fragment>
-          <p>Total number of counters: {props.numCounters}</p>
-          <p>Sum of all values: {props.totalCount}</p>
+          <h3>Number of counters: {props.numCounters}</h3>
+          <h3>Total counts: {props.totalCount}</h3>
       </React.Fragment>
   )
 }
