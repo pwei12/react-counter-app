@@ -13,11 +13,12 @@ export class Counters extends Component {
     }
 
   render() {
-      const { data } = this.state;
+    const { data } = this.state;
 
     return (
       <React.Fragment>
-        {data.map(counter => (
+        {/* {data.length === 0 && <h3>No more counter.</h3> } */}
+            {data.length === 0 ? <h3>No more counter.</h3> : data.map(counter => (
             <Counter key={counter.id} id={counter.id} value={counter.value} handleDelete={this.handleDelete} />
         ))}
       </React.Fragment>
